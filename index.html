@@ -7,11 +7,11 @@
     <title>Angular Application</title>
 </head>
 <body>
-  <div data-ng-controller="MainController">
-    <h1>{{ customer.name }}</h1>
-    <h3>{{ customer.phone }}</h3>
-    <h3>{{ customer.email }}</h3>
-    <h4>{{ year }}</h4>
+  <div data-ng-controller="MainController as ctrl">
+    <h1>{{ ctrl.customer.name }}</h1>
+    <h3>{{ ctrl.customer.phone }}</h3>
+    <h3>{{ ctrl.customer.email }}</h3>
+    <h4>{{ ctrl.year }}</h4>
   </div>
 
     <script src="js/angular.js"></script>

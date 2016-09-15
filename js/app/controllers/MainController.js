@@ -1,11 +1,12 @@
-function MainController($scope) {
+function MainController() {
   //define controller properties
-  $scope.customer = {
+  var vm = this;
+  this.customer = {
     name: 'Antonio',
     phone: '555-1234',
     email: 'antonio@email.com'
   }
-  $scope.year = '2016'
+  this.year = '2016'
 }
 
 angular
